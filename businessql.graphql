@@ -1,0 +1,13 @@
+type SendEmailResponse {
+  sent: Boolean!
+}
+
+type Query {
+  sendEmail(
+    to: String!
+    from: String!
+    subject: String!
+    text: String!
+    html: String
+  ): SendEmailResponse
+}

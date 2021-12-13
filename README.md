@@ -1,2 +1,1 @@
-# businessql-app-mailgun
-Mailgun - BusinessQL
+# Mailgun - BusinessQL App
