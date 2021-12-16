@@ -1,0 +1,13 @@
+[query]
+  # send email
+  [query.sendEmail]
+  type = "api"
+  url = "{data.region}/v3/{data.domain}/messages?from={args.from}&to={args.to}&subject={args.subject}&text={args.text}&html={args.html}"
+  method = "POST"
+
+    [query.sendEmail.headers]
+    Authorization = "Basic base64Encode(data.apiKey)"
+
+    [query.sendEmail.response]
+      [query.sendEmail.response.success]
+      sent = true

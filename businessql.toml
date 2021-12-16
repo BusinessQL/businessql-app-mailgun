@@ -1,0 +1,34 @@
+name = "Mailgun"
+nameId = "mailgun"
+categories = ["email"]
+version = "0.0.1-alpha"
+logo = "https://raw.githubusercontent.com/BusinessQL/businessql-app-mailgun/main/images/logo.svg"
+
+[settings]
+  [[settings.fields]]
+  label = "Region"
+  name = "region"
+  type = "select"
+  [[settings.fields.values]]
+    label = "US"
+    value = "https://api.mailgun.net"
+  [[settings.fields.values]]
+    label = "EU"
+    value = "https://api.eu.mailgun.net"
+
+  [[settings.fields]]
+  label = "Domain"
+  name = "domain"
+  type = "text"
+  placeholder = "example.com"
+
+  [[settings.fields]]
+  label = "API Key"
+  name = "apiKey"
+  type = "password"
+
+[developer]
+nameId = "businessql"
+
+[theme.colors]
+primary = "#AF252A"
