@@ -1,7 +1,7 @@
 name = "Mailgun"
 nameId = "mailgun"
 categories = ["email"]
-version = "0.0.3-alpha"
+version = "0.0.4-alpha"
 logo = "https://raw.githubusercontent.com/BusinessQL/businessql-app-mailgun/main/images/logo.svg"
 
 [settings]
@@ -10,8 +10,8 @@ logo = "https://raw.githubusercontent.com/BusinessQL/businessql-app-mailgun/main
   name = "region"
   type = "select"
   [[settings.fields.values]]
-    label = ""
-    value = "Select region"
+    label = "Select region"
+    value = ""
   [[settings.fields.values]]
     label = "US"
     value = "https://api.mailgun.net"
