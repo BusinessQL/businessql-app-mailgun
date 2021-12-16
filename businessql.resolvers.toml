@@ -6,7 +6,7 @@
   method = "POST"
 
     [query.sendEmail.headers]
-    Authorization = "Basic base64Encode(data.apiKey)"
+    Authorization = "Basic base64Encode('api:{data.apiKey}')"
 
     [query.sendEmail.response]
       [query.sendEmail.response.success]
